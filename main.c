@@ -250,7 +250,7 @@ static void print_fixed_iter(const char *label, const char *name,
 		if (len <= 0)
 			return;
 
-        if (found) {
+        if (found && len == 27) {
             int left, right, _case;
             left = (byte[6] & 0xf0) >> 4;
             right = (byte[6] & 0xf);
